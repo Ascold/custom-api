@@ -6,7 +6,7 @@ import { UserController } from './controllers/user.controller';
 import { UserService } from './services/user.service';
 import { UsersRepositoryService } from './repository/users-repository.service';
 
-import { userSchema } from './models/user.schema';
+import { userSchema } from './repository/models/user.schema';
 
 @Module({
   imports: [MongooseModule.forFeature([{ name: 'User', schema: userSchema }])],
